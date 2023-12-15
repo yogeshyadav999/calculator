@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="cal">
+    <form action="" name="cal" method="post">
+        <input type="text" name="msg" id="text-box" placeholder="0"><br>
+        <input type="button" class="btn" value="AC" onclick="cal.msg.value=''">
+        <input type="button" class="btn" value="()" onclick="cal.msg.value+='()'">
+        <input type="button" class="btn" value="%" onclick="mod()">
+        <input type="button" class="btn" value="/" onclick="di()">
+        <br>
+        <input type="button" class="btn" value="7" onclick="cal.msg.value+=7">
+        <input type="button" class="btn" value="8" onclick="cal.msg.value+=8">
+        <input type="button" class="btn" value="9" onclick="cal.msg.value+=9">
+        <input type="button" class="btn" value="x" onclick="mul()" id="mult">
+        <br>
+        <input type="button" class="btn" value="4" onclick="cal.msg.value+=4">
+        <input type="button" class="btn" value="5" onclick="cal.msg.value+=5">
+        <input type="button" class="btn" value="6" onclick="cal.msg.value+=6">
+        <input type="button" class="btn" value="-" onclick="sub()">
+        <br>
+        <input type="button" class="btn" value="1" onclick="cal.msg.value+=1">
+        <input type="button" class="btn" value="2" onclick="cal.msg.value+=2">
+        <input type="button" class="btn" value="3" onclick="cal.msg.value+=3">
+        <input type="button" class="btn" value="+" onclick="add()">
+        <br>
+        <input type="button" class="btn" value="0" onclick="cal.msg.value+=0">
+        <input type="button" class="btn" value="." onclick="cal.msg.value+='.'">
+        <!-- <button class="btn" onclick="deleteDigit()"><span><i class="fas fa-backspace fa-lg"></i></span></button> -->
+        <input type="button" class="btn" value="X" onclick="deleteDigit()">
+        <input type="button" class="btn" value="=" onclick="cal.msg.value=eval(cal.msg.value)">
+    </form>
+</div>
+
+<script src="/JS/Lecture_10/js.js">
+</script>
+</body>
+</html>
