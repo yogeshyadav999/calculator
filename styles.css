@@ -1,6 +1,13 @@
+h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .cal{
     width: 270px;
-    height: 400px;
+    height: 450;
     margin: auto;
     padding: 10px;
     background-color: black;
