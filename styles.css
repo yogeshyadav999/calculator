@@ -1,3 +1,4 @@
+
 .head{
     color: white;
     text-align: center;
@@ -27,4 +28,5 @@
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px 5px;
+    font-size: 20px;
 }
